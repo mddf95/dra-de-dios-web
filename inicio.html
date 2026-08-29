@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. De Dios - Medicina Estética</title>
+    <link rel="icon" type="image/png" href="imgs/icono.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos-index.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navegacion-principal fixed-top">
+            <div class="container">
+                
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="inicio.html">
+                    <img src="imgs/icono.jpg" alt="LogoDr" class="navegacion-logo-img me-2">
+                    <div class="d-none d-sm-block text-start">
+                        <span class="d-block fuente-marca fw-bold text-uppercase" style="font-size: 0.85rem;">Dra. De Dios</span>
+                        <span class="d-block fuente-subtitulo-etiqueta" style="font-size: 0.55rem; color: var(--color-oro-principal);">Medicina Estética</span>
+                    </div>
+                </a>
+
+                <!-- Botón para móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú enlaces -->
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link navegacion-enlace active" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navegacion-enlace" href="quienes-somos.html">¿Quiénes Somos?</a>
+                        </li>
+                        
+                        <!-- Menú Desplegable: Procedimientos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link navegacion-enlace dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Procedimientos
+                            </a>
+                            <ul class="dropdown-menu desplegable-menu">
+                                <li><a class="dropdown-item desplegable-item" href="faciales.html">Faciales</a></li>
+                                <li><a class="dropdown-item desplegable-item" href="skincare.html">Skincare</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Botón de Contacto -->
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <a class="btn boton-agendar-cita" href="contacto-citas.html">Agendar Cita</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bienvenida -->
+    <section class="seccion-bienvenida container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <img src="imgs/icono.jpg" alt="Emblema Dra. De Dios" class="bienvenida-logo-img mb-3">
+                <h1 class="fuente-marca bienvenida-nombre-doctora mb-1">Dra. De Dios</h1>
+                <p class="fuente-subtitulo-etiqueta bienvenida-especialidad mb-3">Medicina Estética</p>
+                <p class="fuente-eslogan fs-4 mb-0">"Donde el arte y la ciencia realzan la mejor versión de ti"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido -->
+    <main class="seccion-overview container">
+        <div class="text-center mb-5">
+            <span class="fuente-subtitulo-etiqueta d-block mb-2" style="font-size: 0.8rem;">Filosofía Médica</span>
+            <h2 class="fuente-titulo-seccion display-6 fw-bold mb-3">Tratamientos Estéticos Avanzados</h2>
+            <p class="text-muted mx-auto" style="max-width: 650px; font-weight: 300;">
+                Procedimientos orientados al cuidado integral de la piel, la prevención del envejecimiento y la restauración de la armonía facial sin perder tu esencia natural.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <article class="tarjeta-informes">
+                    <div class="tarjeta-linea-decorativa"></div>
+                    <h3 class="fuente-subtitulo-etiqueta h6 mb-3">Salud Cutánea</h3>
+                    <p class="text-muted small mb-0">
+                        Restaura la barrera biológica, hidratación profunda y luminosidad natural de la piel mediante protocolos personalizados.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="tarjeta-informes">
+                    <div class="tarjeta-linea-decorativa"></div>
+                    <h3 class="fuente-subtitulo-etiqueta h6 mb-3">Diagnóstico Médico</h3>
+                    <p class="text-muted small mb-0">
+                        Evaluación exhaustiva del tipo de piel e imperfecciones para aplicar únicamente procedimientos seguros y efectivos.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="tarjeta-informes">
+                    <div class="tarjeta-linea-decorativa"></div>
+                    <h3 class="fuente-subtitulo-etiqueta h6 mb-3">Armonización</h3>
+                    <p class="text-muted small mb-0">
+                        Técnicas sutiles, mínimamente invasivas y sin quirófano orientadas a resaltar tus rasgos de manera natural.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <!-- SECCIÓN PROMOCIONES Y VIDEOS INTERACTIVOS -->
+        <section class="seccion-promociones centrar-texto mt-5">
+            <span class="etiqueta-subtitulo">Promociones y Procedimientos</span>
+            <h2 class="fuente-titulo">Conoce Novedades y Tratamientos</h2>
+
+            <div class="contenedor-carrusel" id="carrusel-contenedor">
+                <button id="btn-prev" class="flecha-carrusel flecha-izquierda">❮</button>
+                <button id="btn-next" class="flecha-carrusel flecha-derecha">❯</button>
+
+                <img id="carrusel-img" src="" alt="Promoción" style="display: none; cursor: zoom-in;">
+                <video id="carrusel-video" muted playsinline style="display: none;"></video>
+                
+                <button id="boton-sonido" class="boton-sonido" style="display: none;">
+                    🔇 Activar Sonido
+                </button>
+
+                <a id="btn-wa-promo" href="#" target="_blank" class="boton-wa-carrusel">
+                    💬 Me interesa esta promoción
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina text-center py-4 mt-5">
+        <div class="container">
+            <small class="fuente-subtitulo-etiqueta text-white-50" style="font-size: 0.7rem;">
+                &copy; 2026 Dra. De Dios - Medicina Estética. Todos los derechos reservados.
+            </small>
+        </div>
+    </footer>
+
+    <!-- MODAL CON NAVEGACIÓN Y GESTO TÁCTIL (SWIPE) -->
+    <div class="modal fade" id="modalImagenGrande" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark text-white border-0">
+                
+                <!-- Encabezado del Modal -->
+                <div class="modal-header border-0 position-absolute top-0 w-100 z-3 bg-dark bg-opacity-50 d-flex justify-content-between align-items-center px-4 py-2 pointer-events-none">
+                    <h5 class="modal-title fs-6 text-warning fw-bold mb-0" id="modal-titulo-promo">Promoción</h5>
+                    <button type="button" class="btn-close btn-close-white fs-5 style-pointer" data-bs-dismiss="modal" aria-label="Cerrar" style="pointer-events: auto;"></button>
+                </div>
+                
+                <!-- Área Visor -->
+                <div class="visor-modal-contenedor" id="visor-modal">
+                    <!-- Flechas físicas -->
+                    <button id="modal-btn-prev" class="flecha-modal flecha-modal-izq">❮</button>
+                    <button id="modal-btn-next" class="flecha-modal flecha-modal-der">❯</button>
+
+                    <!-- Imagen del Modal -->
+                    <img id="imagen-modal-src" src="" alt="Promoción Ampliada" class="img-modal-pantalla">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lógica JavaScript -->
+    <script>
+        const elementos = [
+            { 
+                tipo: 'video', 
+                ruta: 'imgs/promos/promoSep.mp4', 
+                titulo: 'Me comparte sus promociones!!, Gracias!',
+                duracion: 5000 
+            },
+            { 
+                tipo: 'imagen', 
+                ruta: 'imgs/promos/promo2.jpeg', 
+                titulo: 'Tratamiento capilar', 
+                duracion: 5000 
+            },
+            { 
+                tipo: 'imagen', 
+                ruta: 'imgs/promos/promo4.jpeg', 
+                titulo: 'Peelings Faciales', 
+                duracion: 5000 
+            },
+            { 
+                tipo: 'imagen', 
+                ruta: 'imgs/promos/promo5.jpeg', 
+                titulo: 'Dermapen - Microneedling', 
+                duracion: 5000 
+            },
+            { 
+                tipo: 'imagen',  
+                ruta: 'imgs/promos/promo5-1.jpeg', 
+                titulo: 'EXOCELL - Tratamiento de Rejuvenecimiento Facial',
+                duracion: 5000
+            },
+            { 
+                tipo: 'imagen', 
+                ruta: 'imgs/promos/promo7.jpeg', 
+                titulo: 'AquaShine - Hidratación Profunda',
+                duracion: 5000 
+            },
+            { 
+                tipo: 'imagen', 
+                ruta: 'imgs/promos/promo7-1.jpeg', 
+                titulo: 'AquaShine - Hidratación Profunda', 
+                duracion: 5000 
+            }
+        ];
+
+        let indice = 0;
+        let temporizador;
+
+        // Referencias DOM
+        const carruselContenedor = document.getElementById('carrusel-contenedor');
+        const imgEl = document.getElementById('carrusel-img');
+        const videoEl = document.getElementById('carrusel-video');
+        const btnSonido = document.getElementById('boton-sonido');
+        const btnWaPromo = document.getElementById('btn-wa-promo');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const numeroTelefono = "527561053792";
+
+        // Referencias del Modal
+        const modalElement = document.getElementById('modalImagenGrande');
+        const visorModal = document.getElementById('visor-modal');
+        const imagenModalSrc = document.getElementById('imagen-modal-src');
+        const modalTituloPromo = document.getElementById('modal-titulo-promo');
+        const modalBtnPrev = document.getElementById('modal-btn-prev');
+        const modalBtnNext = document.getElementById('modal-btn-next');
+        
+        let modalImagen = null;
+        if (modalElement) {
+            modalImagen = new bootstrap.Modal(modalElement);
+        }
+
+        function mostrarElemento() {
+            clearTimeout(temporizador);
+            const actual = elementos[indice];
+
+            imgEl.style.opacity = 0;
+            videoEl.style.opacity = 0;
+
+            const mensaje = encodeURIComponent(`Hola Dra. De Dios, me interesa obtener información sobre la promoción: "${actual.titulo}"`);
+            btnWaPromo.href = `https://wa.me/${numeroTelefono}?text=${mensaje}`;
+
+            setTimeout(() => {
+                if (actual.tipo === 'imagen') {
+                    videoEl.pause();
+                    videoEl.style.display = 'none';
+                    btnSonido.style.display = 'none';
+
+                    imgEl.src = actual.ruta;
+                    imgEl.style.display = 'block';
+                    imgEl.style.opacity = 1;
+
+                    temporizador = setTimeout(siguienteElemento, actual.duracion || 5000);
+
+                } else if (actual.tipo === 'video') {
+                    imgEl.style.display = 'none';
+
+                    videoEl.src = actual.ruta;
+                    videoEl.style.display = 'block';
+                    videoEl.style.opacity = 1;
+                    videoEl.currentTime = 0;
+                    
+                    videoEl.muted = true;
+                    btnSonido.textContent = "🔇 Activar Sonido";
+                    btnSonido.style.display = 'block';
+
+                    videoEl.play();
+                    videoEl.onended = siguienteElemento;
+                }
+            }, 300);
+        }
+
+        function siguienteElemento() {
+            indice = (indice + 1) % elementos.length;
+            mostrarElemento();
+        }
+
+        function anteriorElemento() {
+            indice = (indice - 1 + elementos.length) % elementos.length;
+            mostrarElemento();
+        }
+
+        // ACTUALIZAR MODAL
+        function actualizarModal() {
+            imagenModalSrc.style.opacity = 0;
+            setTimeout(() => {
+                const actual = elementos[indice];
+                modalTituloPromo.textContent = actual.titulo;
+                imagenModalSrc.src = actual.ruta;
+                imagenModalSrc.style.opacity = 1;
+            }, 150);
+        }
+
+        function siguienteModal() {
+            do {
+                indice = (indice + 1) % elementos.length;
+            } while (elementos[indice].tipo !== 'imagen');
+            actualizarModal();
+        }
+
+        function anteriorModal() {
+            do {
+                indice = (indice - 1 + elementos.length) % elementos.length;
+            } while (elementos[indice].tipo !== 'imagen');
+            actualizarModal();
+        }
+
+        // EVENTOS DEL MODAL
+        imgEl.addEventListener('click', (e) => {
+            e.stopPropagation();
+            clearTimeout(temporizador);
+            actualizarModal();
+            if (modalImagen) {
+                modalImagen.show();
+            }
+        });
+
+        // REANUDAR CARRUSEL AL CERRAR
+        if (modalElement) {
+            modalElement.addEventListener('hidden.bs.modal', () => {
+                const actual = elementos[indice];
+                if (actual.tipo === 'imagen') {
+                    temporizador = setTimeout(siguienteElemento, actual.duracion || 5000);
+                }
+            });
+        }
+
+        // BOTONES INTERNOS DEL MODAL
+        modalBtnNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            siguienteModal();
+        });
+
+        modalBtnPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            anteriorModal();
+        });
+
+        // DETECCIÓN DE GESTOS TÁCTILES (SWIPE EN CELULARES)
+        let inicioX = 0;
+        let finX = 0;
+
+        visorModal.addEventListener('touchstart', (e) => {
+            inicioX = e.touches[0].clientX;
+        }, { passive: true });
+
+        visorModal.addEventListener('touchend', (e) => {
+            finX = e.changedTouches[0].clientX;
+            const diferencia = inicioX - finX;
+
+            // Sensibilidad del gesto (mínimo 50px de movimiento)
+            if (Math.abs(diferencia) > 50) {
+                if (diferencia > 0) {
+                    siguienteModal(); // Deslizó hacia la izquierda -> Siguiente
+                } else {
+                    anteriorModal();  // Deslizó hacia la derecha -> Anterior
+                }
+            }
+        }, { passive: true });
+
+        // CONTROLES DE NAVEGACIÓN PRINCIPALES
+        btnNext.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            siguienteElemento();
+        });
+
+        btnPrev.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            anteriorElemento();
+        });
+
+        btnSonido.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (videoEl.muted) {
+                videoEl.muted = false;
+                btnSonido.textContent = "🔊 Silenciar";
+            } else {
+                videoEl.muted = true;
+                btnSonido.textContent = "🔇 Activar Sonido";
+            }
+        });
+
+        btnWaPromo.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Inicializar
+        mostrarElemento();
+    </script>
+</body>
+</html>
