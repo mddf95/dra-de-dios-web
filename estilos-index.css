@@ -368,3 +368,22 @@ body {
     color: var(--color-fondo-nude);
     border-top: 1px solid rgba(197, 160, 89, 0.3);
 }
+
+/* Botón de Soporte en el Footer */
+.btn-soporte-wa {
+    background-color: #25D366;
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-soporte-wa:hover {
+    background-color: #1ebc57;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+}
