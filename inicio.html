@@ -181,7 +181,13 @@
                     <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
                 </a>
             </div>
-
+            <!-- CONTADOR DE VISITAS -->
+            <div class="mb-3">
+                <small class="fuente-subtitulo-etiqueta text-white-50 d-inline-flex align-items-center gap-2" style="font-size: 0.75rem;">
+                    <i class="fas fa-eye text-warning"></i> Total de visitas: 
+                    <span id="contador-visitas" class="fw-bold text-white bg-dark px-2 py-1 rounded border border-secondary">...</span>
+                </small>
+            </div>
             <hr class="my-3 border-secondary opacity-25 mx-auto" style="max-width: 300px;">
 
             <div>
@@ -453,6 +459,27 @@
 
         // Inicializar
         mostrarElemento();
+    </script>
+    <!-- SCRIPT DEL CONTADOR DE VISITAS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const namespace = "dra-de-dios-web-mddf95";
+            const key = "visitas-totales";
+
+            fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+                .then(res => res.json())
+                .then(data => {
+                    const elemento = document.getElementById("contador-visitas");
+                    if (elemento) {
+                        elemento.innerText = data.value.toLocaleString();
+                    }
+                })
+                .catch(err => {
+                    console.error("Error al cargar contador:", err);
+                    const elemento = document.getElementById("contador-visitas");
+                    if (elemento) elemento.innerText = "1";
+                });
+        });
     </script>
 </body>
 </html>
